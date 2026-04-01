@@ -36,10 +36,16 @@ export default async function ScienceProjectPage({
         ))}
       </div>
 
-      {/* GIF / image */}
+      {/* video / image */}
       {project.image && (
         <div className="mb-12 border border-[var(--border)] max-w-xs">
-          <img src={project.image} alt={project.title} className="w-full" />
+          {project.image.endsWith(".mp4") ? (
+            <video autoPlay loop muted playsInline className="w-full">
+              <source src={project.image} type="video/mp4" />
+            </video>
+          ) : (
+            <img src={project.image} alt={project.title} className="w-full" />
+          )}
         </div>
       )}
 
