@@ -4,7 +4,7 @@ export default function Footer() {
       <span>Madison Theodora Sanchez-Forman</span>
       <div className="flex gap-6">
         <a
-          href="https://linkedin.com/in/"
+          href="https://www.linkedin.com/in/madiforman/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[var(--terracotta)] transition-colors"
@@ -12,7 +12,7 @@ export default function Footer() {
           LinkedIn
         </a>
         <a
-          href="https://github.com/"
+          href="https://github.com/madiforman"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[var(--terracotta)] transition-colors"
@@ -20,7 +20,7 @@ export default function Footer() {
           GitHub
         </a>
         <a
-          href="https://instagram.com/"
+          href="https://instagram.com/msanchezforman"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[var(--terracotta)] transition-colors"

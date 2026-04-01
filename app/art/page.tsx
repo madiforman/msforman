@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { artPieces } from "@/lib/art";
 
 export default function ArtPage() {
@@ -8,11 +9,14 @@ export default function ArtPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {artPieces.map((piece) => (
           <div key={piece.slug} className="group cursor-default">
-            {/* Image placeholder — replace src with real image path */}
-            <div className="aspect-square bg-[var(--border)] mb-4 overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center text-xs text-[var(--muted)] tracking-widest uppercase">
-                Image
-              </div>
+            <div className="bg-white mb-4 overflow-hidden relative border border-[var(--border)]" style={{ aspectRatio: piece.aspect ?? "1/1" }}>
+              <Image
+                src={piece.image}
+                alt={piece.title}
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
             </div>
             <p className="text-sm group-hover:text-[var(--turquoise)] transition-colors">{piece.title}</p>
             <p className="text-xs text-[var(--muted)] mt-1">

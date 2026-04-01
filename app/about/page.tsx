@@ -17,7 +17,7 @@ export default function AboutPage() {
 
       <div className="mt-16 flex flex-col gap-3 text-sm tracking-widest uppercase">
         <a
-          href="https://linkedin.com/in/"
+          href="https://linkedin.com/in/madiforman/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[var(--terracotta)] transition-colors"
@@ -25,7 +25,7 @@ export default function AboutPage() {
           LinkedIn →
         </a>
         <a
-          href="https://github.com/"
+          href="https://github.com/madiforman"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[var(--terracotta)] transition-colors"
@@ -33,7 +33,7 @@ export default function AboutPage() {
           GitHub →
         </a>
         <a
-          href="https://instagram.com/"
+          href="https://instagram.com/msanchezforman"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[var(--terracotta)] transition-colors"

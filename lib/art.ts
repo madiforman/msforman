@@ -6,16 +6,18 @@ export type ArtPiece = {
   dimensions?: string;
   description: string;
   image: string; // path under /public
+  aspect?: string; // e.g. "5/7", "4/3", "1/1" — defaults to "1/1" if omitted
 };
 
 export const artPieces: ArtPiece[] = [
   {
-    slug: "untitled-001",
-    title: "Untitled 001",
+    slug: "gocco-print",
+    title: "Untitled",
     year: 2024,
-    medium: "Mixed media",
-    dimensions: "24 × 36 in",
-    description: "Placeholder artwork. Replace with your real piece.",
-    image: "/art/placeholder.jpg",
+    medium: "Embossment ink on brillo pad",
+    dimensions: "5 × 7 in",
+    aspect: "5/7",
+    description: "Gocco print of photograph, values isolated and binarized via python.",
+    image: "/art/IMG_0252.jpg",
   },
 ];
