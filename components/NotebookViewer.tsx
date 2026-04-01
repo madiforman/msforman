@@ -60,7 +60,7 @@ export default function NotebookViewer({ src }: { src: string }) {
                   "";
                 if (!text) return null;
                 return (
-                  <div key={j} className="bg-white border border-[var(--border)] border-l-[var(--terracotta)] border-l-2 p-4 overflow-x-auto">
+                  <div key={j} className="bg-white border border-[var(--border)] border-l-[var(--turquoise)] border-l-2 p-4 overflow-x-auto">
                     <pre className="text-xs leading-relaxed text-[var(--muted)]">{text}</pre>
                   </div>
                 );

@@ -36,6 +36,13 @@ export default async function ScienceProjectPage({
         ))}
       </div>
 
+      {/* GIF / image */}
+      {project.image && (
+        <div className="mb-12 border border-[var(--border)] max-w-xs">
+          <img src={project.image} alt={project.title} className="w-full" />
+        </div>
+      )}
+
       {/* Links row */}
       {(project.paper || project.poster) && (
         <div className="flex gap-6 mb-12 text-sm tracking-widest uppercase">

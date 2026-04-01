@@ -18,6 +18,6 @@ export const artPieces: ArtPiece[] = [
     dimensions: "5 × 7 in",
     aspect: "5/7",
     description: "Gocco print of photograph, values isolated and binarized via python.",
-    image: "/art/IMG_0252.jpg",
+    image: "/art/IMG_0252.jpeg",
   },
 ];

@@ -5,8 +5,8 @@ export default function AboutPage() {
 
       <div className="space-y-6 text-base leading-relaxed">
         <p>
-          Madison Theodora Sanchez-Forman is an artist and data scientist working at the
-          intersection of microscopy and visual inquiry.
+          I am an artist and data scientist working at the intersection of microscopy and visual inquiry.
+          I seek to explore ways to describe form, whether geometrically or via light and shadow.
         </p>
         <p>
           {/* Replace with your real bio */}

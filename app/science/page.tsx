@@ -11,16 +11,16 @@ export default function SciencePage() {
           <Link
             key={project.slug}
             href={`/science/${project.slug}`}
-            className="py-8 group flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 hover:text-[var(--terracotta)] transition-colors"
+            className="py-8 group flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4"
           >
             <div>
-              <p className="text-lg">{project.title}</p>
+              <p className="text-lg group-hover:text-turquoise transition-colors">{project.title}</p>
               <p className="text-sm text-[var(--muted)] mt-2 max-w-xl">{project.description}</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs tracking-widest uppercase border border-[var(--border)] px-2 py-0.5"
+                    className="text-xs tracking-widest uppercase border border-[var(--border)] px-2 py-0.5 text-[var(--foreground)]"
                   >
                     {tag}
                   </span>

@@ -12,13 +12,13 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row gap-px bg-[var(--border)] border border-[var(--border)] w-full max-w-lg">
         <Link
           href="/art"
-          className="flex-1 bg-white py-8 text-sm tracking-widest uppercase hover:text-[var(--turquoise)] transition-colors"
+          className="flex-1 bg-white py-8 text-sm tracking-widest uppercase hover:text-turquoise transition-colors"
         >
           Art
         </Link>
         <Link
           href="/science"
-          className="flex-1 bg-white py-8 text-sm tracking-widest uppercase hover:text-[var(--terracotta)] transition-colors"
+          className="flex-1 bg-white py-8 text-sm tracking-widest uppercase hover:text-turquoise transition-colors"
         >
           Science
         </Link>

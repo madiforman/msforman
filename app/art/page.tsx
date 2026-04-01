@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { artPieces } from "@/lib/art";
 
 export default function ArtPage() {
@@ -8,7 +9,7 @@ export default function ArtPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {artPieces.map((piece) => (
-          <div key={piece.slug} className="group cursor-default">
+          <Link key={piece.slug} href={`/art/${piece.slug}`} className="group">
             <div className="bg-white mb-4 overflow-hidden relative border border-[var(--border)]" style={{ aspectRatio: piece.aspect ?? "1/1" }}>
               <Image
                 src={piece.image}
@@ -18,11 +19,11 @@ export default function ArtPage() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
-            <p className="text-sm group-hover:text-[var(--turquoise)] transition-colors">{piece.title}</p>
+            <p className="text-sm group-hover:text-turquoise transition-colors">{piece.title}</p>
             <p className="text-xs text-[var(--muted)] mt-1">
               {piece.medium}{piece.dimensions ? `, ${piece.dimensions}` : ""} — {piece.year}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

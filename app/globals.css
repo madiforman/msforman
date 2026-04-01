@@ -4,18 +4,16 @@
   --background: #ffffff;
   --foreground: #111111;
   --terracotta: #C2713F; /* science section + general nav */
-  --turquoise: #4A9B96;  /* art section */
+  --turquoise: #40E0D0;  /* art section */
   --muted: #888888;
   --border: #E5E5E5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-terracotta: var(--terracotta);
-  --color-turquoise: var(--turquoise);
-  --color-muted: var(--muted);
-  --color-border: var(--border);
+@theme {
+  --color-turquoise: #40E0D0;
+  --color-terracotta: #C2713F;
+  --color-muted: #888888;
+  --color-border: #E5E5E5;
 }
 
 * {
@@ -36,7 +34,9 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
