@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] px-8 text-center">
       <p className="text-xs tracking-widest uppercase text-[var(--muted)] mb-6">
-        Art &amp; Data Science
+        Artist &amp; Data Scientist
       </p>
       <h1 className="text-4xl md:text-6xl mb-2 tracking-tight">Madison </h1>
       <h1 className="text-4xl md:text-6xl mb-16 tracking-tight">Sanchez-Forman</h1>
