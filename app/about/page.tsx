@@ -20,7 +20,7 @@ export default function AboutPage() {
           href="https://linkedin.com/in/madiforman/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[var(--terracotta)] transition-colors"
+          className="hover:text-[var(--turquoise)] transition-colors"
         >
           LinkedIn →
         </a>
@@ -28,7 +28,7 @@ export default function AboutPage() {
           href="https://github.com/madiforman"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[var(--terracotta)] transition-colors"
+          className="hover:text-[var(--turquoise)] transition-colors"
         >
           GitHub →
         </a>
@@ -36,7 +36,7 @@ export default function AboutPage() {
           href="https://instagram.com/msanchezforman"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[var(--terracotta)] transition-colors"
+          className="hover:text-[var(--turquoise)] transition-colors"
         >
           Instagram →
         </a>

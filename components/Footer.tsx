@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="px-8 py-6 border-t border-[var(--border)] flex items-center justify-between text-xs tracking-widest uppercase text-[var(--muted)]">
-      <span>Madison Theodora Sanchez-Forman</span>
+      <span>MSF</span>
       <div className="flex gap-6">
         <a
           href="https://www.linkedin.com/in/madiforman/"
