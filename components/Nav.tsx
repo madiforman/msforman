@@ -7,7 +7,7 @@ export default function Nav() {
         href="/"
         className="text-sm tracking-widest uppercase hover:text-turquoise active:text-turquoise transition-colors"
       >
-        M. T. Sanchez-Forman
+        MSF
       </Link>
       <nav className="flex gap-8 text-sm tracking-widest uppercase">
         <Link href="/art" className="hover:text-turquoise active:text-turquoise transition-colors">
