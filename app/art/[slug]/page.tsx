@@ -20,7 +20,7 @@ export default async function ArtPiecePage({
     <div className="px-8 py-16 max-w-4xl mx-auto">
       <Link
         href="/art"
-        className="text-xs tracking-widest uppercase text-[var(--muted)] hover:text-turquoise transition-colors mb-12 inline-block"
+        className="text-xs tracking-widest uppercase text-[var(--muted)] hover:text-turquoise active:text-turquoise transition-colors mb-12 inline-block"
       >
         ← Art
       </Link>

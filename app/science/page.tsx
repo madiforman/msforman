@@ -14,7 +14,7 @@ export default function SciencePage() {
             className="py-8 group flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4"
           >
             <div>
-              <p className="text-lg group-hover:text-turquoise transition-colors">{project.title}</p>
+              <p className="text-lg group-hover:text-turquoise group-active:text-turquoise active:text-turquoise transition-colors">{project.title}</p>
               <p className="text-sm text-[var(--muted)] mt-2 max-w-xl">{project.description}</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {project.tags.map((tag) => (

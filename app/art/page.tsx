@@ -19,7 +19,7 @@ export default function ArtPage() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
-            <p className="text-sm group-hover:text-turquoise transition-colors">{piece.title}</p>
+            <p className="text-sm group-hover:text-turquoise group-active:text-turquoise active:text-turquoise transition-colors">{piece.title}</p>
             <p className="text-xs text-[var(--muted)] mt-1">
               {piece.medium}{piece.dimensions ? `, ${piece.dimensions}` : ""} — {piece.year}
             </p>

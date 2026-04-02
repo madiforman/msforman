@@ -7,7 +7,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/madiforman/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-turquoise transition-colors"
+          className="hover:text-turquoise active:text-turquoise transition-colors"
         >
           LinkedIn
         </a>
@@ -15,7 +15,7 @@ export default function Footer() {
           href="https://github.com/madiforman"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-turquoise transition-colors"
+          className="hover:text-turquoise active:text-turquoise transition-colors"
         >
           GitHub
         </a>
@@ -23,7 +23,7 @@ export default function Footer() {
           href="https://instagram.com/msanchezforman"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-turquoise transition-colors"
+          className="hover:text-turquoise active:text-turquoise transition-colors"
         >
           Instagram
         </a>
