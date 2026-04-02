@@ -30,5 +30,46 @@ export const artPieces: ArtPiece[] = [
     description: "Drawing from life",
     image: "/art/IMG_0443.jpeg",
   },
+  {
+    slug: "inking",
+    title: "Untitled",
+    year: 2025,
+    medium: "Drawing ink + water on 300 gsm paper",
+    dimensions: "26 × 20 in",
+    aspect: "10/8",
+    description: "",
+    image: "/art/IMG_2937.jpeg",
+  },
+    {
+    slug: "hairpin",
+    title: "Sacred Hairpin",
+    year: 2025,
+    medium: "Sterling silver (925)",
+    dimensions: "?",
+    aspect: "8/10",
+    description: "",
+    image: "/art/IMG_6866.jpeg",
+  },
+  {
+    slug: "oil-study",
+    title: "Study",
+    year: 2025,
+    medium: "Oil paint",
+    dimensions: "?",
+    aspect: "8/10",
+    description: "",
+    image: "/art/IMG_5318.jpeg",
+  },
+  {
+    slug: "ladyprint",
+    title: "Untitled",
+    year: 2023,
+    medium: "Print gocco",
+    dimensions: "?",
+    aspect: "5/5",
+    description: "",
+    image: "/art/IMG_7792.jpeg",
+  }
+
 ];
 

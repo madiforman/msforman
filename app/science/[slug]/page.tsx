@@ -79,6 +79,28 @@ export default async function ScienceProjectPage({
           <NotebookSection src={`/notebooks/${project.notebook}`} />
         </section>
       )}
+
+      {/* Subsections */}
+      {project.sections && project.sections.map((section) => (
+        <section key={section.title} className="border-t border-[var(--border)] pt-10 mt-10">
+          <h2 className="text-xs tracking-widest uppercase text-[var(--muted)] mb-4">{section.title}</h2>
+          <p className="text-base leading-relaxed max-w-2xl mb-6">{section.body}</p>
+          {section.image && (
+            <div className="border border-[var(--border)] max-w-xs mb-6">
+              {section.image.endsWith(".mp4") ? (
+                <video autoPlay loop muted playsInline className="w-full">
+                  <source src={section.image} type="video/mp4" />
+                </video>
+              ) : (
+                <img src={section.image} alt={section.title} className="w-full" />
+              )}
+            </div>
+          )}
+          {section.notebook && (
+            <NotebookSection src={`/notebooks/${section.notebook}`} />
+          )}
+        </section>
+      ))}
     </div>
   );
 }
