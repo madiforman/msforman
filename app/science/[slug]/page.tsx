@@ -1,6 +1,7 @@
 import { scienceProjects } from "@/lib/science";
 import { notFound } from "next/navigation";
 import NotebookSection from "@/components/NotebookSection";
+import ScienceImages from "@/components/ScienceImages";
 
 export function generateStaticParams() {
   return scienceProjects.map((p) => ({ slug: p.slug }));
@@ -21,7 +22,29 @@ export default async function ScienceProjectPage({
       <p className="text-xs tracking-widest uppercase text-[var(--muted)] mb-8">
         Science / {project.year}
       </p>
-      <h1 className="text-3xl mb-4">{project.title}</h1>
+      <h1 className="text-3xl mb-6">{project.title}</h1>
+
+      {/* Links row */}
+      {(project.paper || project.poster) && (
+        <div className="flex gap-6 mb-6 text-sm tracking-widest uppercase">
+          {project.paper && (
+            <a
+              href={project.paper}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--turquoise)] hover:underline"
+            >
+              Paper →
+            </a>
+          )}
+          {project.poster && (
+            <a href={project.poster} target="_blank" rel="noopener noreferrer" className="text-[var(--turquoise)] hover:underline">
+              Poster →
+            </a>
+          )}
+        </div>
+      )}
+
       <p className="text-base text-[var(--muted)] mb-4 max-w-2xl leading-relaxed">
         {project.description}
       </p>
@@ -38,37 +61,16 @@ export default async function ScienceProjectPage({
 
       {/* video / image */}
       {project.image && (
-        <div className="mb-12 border border-[var(--border)] max-w-xs">
-          {project.image.endsWith(".mp4") ? (
-            <video autoPlay loop muted playsInline className="w-full">
-              <source src={project.image} type="video/mp4" />
-            </video>
-          ) : (
-            <img src={project.image} alt={project.title} className="w-full" />
-          )}
-        </div>
+        <ScienceImages images={[{
+          src: project.image,
+          caption: project.imageCaption,
+          size: project.imageSize,
+          darkBackground: project.imageDarkBackground,
+        }]} />
       )}
 
-      {/* Links row */}
-      {(project.paper || project.poster) && (
-        <div className="flex gap-6 mb-12 text-sm tracking-widest uppercase">
-          {project.paper && (
-            <a
-              href={project.paper}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--terracotta)] hover:underline"
-            >
-              Paper →
-            </a>
-          )}
-          {project.poster && (
-            <a href={project.poster} target="_blank" rel="noopener noreferrer" className="text-[var(--terracotta)] hover:underline">
-              Poster →
-            </a>
-          )}
-        </div>
-      )}
+      {/* Multiple images */}
+      {project.images && <ScienceImages images={project.images} />}
 
       {/* Notebook */}
       {project.notebook && (

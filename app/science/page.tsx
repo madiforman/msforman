@@ -15,7 +15,7 @@ export default function SciencePage() {
           >
             <div>
               <p className="text-lg group-hover:text-turquoise group-active:text-turquoise active:text-turquoise transition-colors">{project.title}</p>
-              <p className="text-sm text-[var(--muted)] mt-2 max-w-xl">{project.description}</p>
+              <p className="text-sm text-[var(--muted)] mt-2 max-w-xl">{project.summary}</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {project.tags.map((tag) => (
                   <span
