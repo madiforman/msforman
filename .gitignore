@@ -40,4 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-*.gifpublic/science/full_embryo_dataset.svg
+*.gif
+public/science/full_embryo_dataset.svg
