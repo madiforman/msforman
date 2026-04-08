@@ -31,44 +31,44 @@ export type ScienceProject = {
 };
 
 export const scienceProjects: ScienceProject[] = [
-  // {
-  //   slug: "whole-embryo-analysis",
-  //   title: "In toto cell-to-structure analysis during early mammalian organ formation",
-  //   year: 2026,
-  //   tags: ["microscopy", "image analysis"],
-  //   summary: "Combining tissue clearing and light sheet fluorescence microscopy to capture single-cell and structural features across whole mouse embryos during early organ formation.",
-  //   description:
-  //     "Advances in tissue clearing and light sheet fluorescence microscopy (LSFM) provide an opportunity to obtain single-cell measurements in large 3D tissue environments. These methods are required for the in toto, whole embryo study of mammalian embryogenesis beyond gastrulation. Here, we combine tissue clearing and high-resolution LSFM on mouse embryos from embryonic day (E)9.0 to capture single-cell and structure features from the same individual as organ formation begins. Because our process is section-free, we obtain near lossless recovery of the spatial niche and its constituent cells.",
-  //   images: [
-  //     { src: "/science/300ppi/the_cohort_1.png", 
-  //       darkBackground: true, 
-  //       caption: "The cohort: 11 individuals, 17T of image data.",
-  //       size: "xl"},
-  //     { src: "/science/nuclear_masks_rendering.mp4", 
-  //       darkBackground: false,
-  //       caption: "3D rendering of nuclear masks from one individual, segmented by finetuned CellPose-SAM.",
-  //       size: "sm"}
-  //   ],
-  //   // image: "/science/nuclear_masks_rendering.mp4",
-  //   // imageCaption: "3D rendering of nuclear masks from one individual, segmented by finetuned CellPose-SAM.",
-  //   // imageSize: "sm",
-  //   poster: undefined,
-  //   paper: undefined,
-  //   // sections: [
-  //   //   {
-  //   //     title: "Background",
-  //   //     body: "Add your background text here.",
-  //   //   },
-  //   //   {
-  //   //     title: "Methods",
-  //   //     body: "Describe your methods here.",
-  //   //   },
-  //   //   {
-  //   //     title: "Results",
-  //   //     body: "Describe your results here.",
-  //   //   },
-  //   // ],
-  // },
+  {
+    slug: "whole-embryo-analysis",
+    title: "In toto cell-to-structure analysis during early mammalian organ formation",
+    year: 2026,
+    tags: ["microscopy", "image analysis"],
+    summary: "Combining tissue clearing and light sheet fluorescence microscopy to capture single-cell and structural features across whole mouse embryos during early organ formation.",
+    description:
+      "Advances in tissue clearing and light sheet fluorescence microscopy (LSFM) provide an opportunity to obtain single-cell measurements in large 3D tissue environments. These methods are required for the in toto, whole embryo study of mammalian embryogenesis beyond gastrulation. Here, we combine tissue clearing and high-resolution LSFM on mouse embryos from embryonic day (E)9.0 to capture single-cell and structure features from the same individual as organ formation begins. Because our process is section-free, we obtain near lossless recovery of the spatial niche and its constituent cells.",
+    images: [
+      { src: "/science/300ppi/the_cohort_1.png", 
+        darkBackground: true, 
+        caption: "The cohort: 11 individuals, 17T of image data.",
+        size: "xl"},
+      { src: "/science/nuclear_masks_rendering.mp4", 
+        darkBackground: false,
+        caption: "3D rendering of nuclear masks from one individual, segmented by finetuned CellPose-SAM.",
+        size: "sm"}
+    ],
+    // image: "/science/nuclear_masks_rendering.mp4",
+    // imageCaption: "3D rendering of nuclear masks from one individual, segmented by finetuned CellPose-SAM.",
+    // imageSize: "sm",
+    poster: undefined,
+    paper: undefined,
+    // sections: [
+    //   {
+    //     title: "Background",
+    //     body: "Add your background text here.",
+    //   },
+    //   {
+    //     title: "Methods",
+    //     body: "Describe your methods here.",
+    //   },
+    //   {
+    //     title: "Results",
+    //     body: "Describe your results here.",
+    //   },
+    // ],
+  },
   {
     slug: "CellCycleNet",
     title: "Predicting cell cycle stage from 3D single-cell nuclear-stained images",
